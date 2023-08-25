@@ -182,7 +182,8 @@ while 1:
 	init()
 	#custom()
 	lcd_cmd(0x80)
-	strg_data(str(round(ultra_data(),2)))
-	print(str(round(ultra_data(),2)))
+	val=str(round(ultra_data(),2))
+	strg_data(val)
+	print(val)
 	time.sleep(2)
 	
